@@ -1,19 +1,9 @@
-# Asdougl's React Typescript Tailwindcss Boilerplate
+# Asdougl Components
 
-How to run:
+Mostly a test project for setting up a component library on NPM.
 
-### Dev Server
-
-```
-npm run dev
-```
-
-### Build for Production
+## Install
 
 ```
-npm run build
+npm i @asdougl/components
 ```
-
-## Reminder
-
-Don't forget to run `rm -rf .git` and then `git init` to replace the boilerplate's git repo

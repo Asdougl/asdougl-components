@@ -1,0 +1,40 @@
+name: Production Build
+
+# When Will workflow run?
+on:
+  push:
+    branches: [main]
+  pull-request:
+    branches: [main]
+  workflow_dispatch:
+
+# What will it do?
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16.x
+
+      - name: NPM Install
+        run: |
+          npm install
+
+      - name: Run Test
+        run: |
+          npm run test
+
+      - name: Build Production Files
+        run: |
+          npm run build
+
+      - name: Publish to NPM
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          npm publish --access public
