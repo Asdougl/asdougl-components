@@ -1,6 +1,6 @@
 {
   "name": "@asdougl/components",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
@@ -60,6 +60,9 @@
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2"
   },
+  "files": [
+    "./dist/**/*"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Asdougl/asdougl-components"
