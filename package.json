@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack serve --hot --host localhost --mode development --config ./webpack.config.js",
-    "build": "cross-env NODE_ENV=production npx tailwindcss -i src/index.css -o dist/index.css && tsc --project tsconfig.json",
+    "build": "cross-env NODE_ENV=production npx tailwindcss -i src/external.css -o dist/index.css && tsc --project tsconfig.json",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "test": "jest"
