@@ -1,6 +1,6 @@
 {
   "name": "@asdougl/components",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
@@ -15,7 +15,8 @@
   "license": "ISC",
   "peerDependencies": {
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "classnames": "^2.3.1"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
@@ -34,6 +35,7 @@
     "@types/react-dom": "^17.0.8",
     "autoprefixer": "^10.2.6",
     "babel-loader": "^8.2.2",
+    "classnames": "^2.3.1",
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "cross-env": "^7.0.3",
     "css-loader": "^5.2.6",

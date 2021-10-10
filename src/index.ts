@@ -1,3 +1,2 @@
 export * from './components/Button'
-
-import './index.css'
+export * from './components/Input'
